@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.header {
+  background-image: url(/img/spaghetti-g133ff4271_640.jpg);
+  background-color: red;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__box {
+  max-width: 1200px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.header__heading {
+  font-size: 6rem;
+  color: rgb(255, 255, 255);
+}
+.header__text {
+  font-size: 1.8rem;
+  color: rgb(255, 255, 255);
+}
+.header__search-box {
+  width: 65%;
+  height: 50px;
+  max-width: 400px;
+  padding: 1rem;
+  border-radius: 25px;
+  box-shadow: none;
+  border: none;
+  font-size: 1.5rem;
+}
+.header__btn {
+  border-radius: 1.5rem;
+  padding: 1rem 3.5rem;
+  border: none;
+  background-color: #000;
+  color: rgb(255, 255, 255);
+}
+
+.products {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.products__heading {
+  text-align: center;
+}
+.products__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  gap: 1rem;
+}
+.products__product {
+  width: 80%;
+  max-width: 400px;
+}
+.products__image {
+  background-image: url(../img/burrito-gc16c0deb4_640.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    background-image: url(/img/spaghetti-g20ce54f06_1920.jpg);
+  }
+  .header__heading {
+    font-size: 6rem;
+    color: rgb(255, 255, 255);
+  }
+  .header__text {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+  }
+  .header__search-box {
+    font-size: 1.5rem;
+  }
+  .header__btn {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header__heading {
+    font-size: 7rem;
+    color: rgb(255, 255, 255);
+  }
+  .header__text {
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+  }
+  .header__search-box {
+    font-size: 1.5rem;
+  }
+  .header__btn {
+    transition: color, background-color 0.3s;
+  }
+  .header__btn:hover {
+    color: #000;
+    background-color: rgb(255, 255, 255);
+  }
+  .header__btn:active {
+    background-color: tomato;
+  }
+}/*# sourceMappingURL=style.css.map */
